@@ -1,0 +1,31 @@
+{
+	"name": "AwesomeProject",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"start": "node node_modules/react-native/local-cli/cli.js start",
+		"ios": "react-native run-ios",
+		"android": "react-native run-android",
+		"web": "webpack-dev-server --content-base web",
+		"test": "jest"
+	},
+	"dependencies": {
+		"babel-loader": "^7.1.1",
+		"babel-preset-es2015": "^6.24.1",
+		"babel-preset-react": "^6.24.1",
+		"react": "16.0.0-alpha.12",
+		"react-dom": "16.0.0-alpha.12",
+		"react-native": "0.46.3",
+		"webpack": "^3.3.0"
+	},
+	"devDependencies": {
+		"babel-jest": "20.0.3",
+		"babel-preset-react-native": "2.1.0",
+		"jest": "20.0.4",
+		"react-test-renderer": "16.0.0-alpha.12",
+		"webpack-dev-server": "^2.5.1"
+	},
+	"jest": {
+		"preset": "react-native"
+	}
+}
