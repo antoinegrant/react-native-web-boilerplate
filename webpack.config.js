@@ -20,5 +20,6 @@ module.exports = {
     alias: {
       'react-native': 'react-native-web',
     },
+    extensions: [ '.web.js' ],
   },
 };

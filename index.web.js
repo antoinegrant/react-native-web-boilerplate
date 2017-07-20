@@ -1,20 +1,15 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
 import React, { Component } from 'react';
-import {render} from 'react-dom';
+import { AppRegistry } from 'react-native';
 
-export default class App extends Component {
+import AppContainer from './src/AppContainer';
+
+class AwesomeProject extends Component {
   render() {
     return (
-      <div>
-        <h1>Hello world!!</h1>
-      </div>
+      <AppContainer />
     );
   }
 }
 
-render(<App />, document.getElementById('react-app'));
+AppRegistry.registerComponent('AwesomeProject', () => AwesomeProject);
+AppRegistry.runApplication('AwesomeProject', { rootTag: document.getElementById('react-app') });
